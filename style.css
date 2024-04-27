@@ -405,95 +405,56 @@ nav {
     height: 450px;
     width: 100%;
     background-color: #F6FFFD;
-    
-
-
+    position: relative;
 
 }
-
-@media(max-width:780px) {
-    .registration {
-        height: 698px;
-        margin-top: 0px;
-    }
-}
-
 .regline {
+    position: absolute;
     display: flex;
-    width: 500px;
     flex-wrap: wrap;
-    margin-left: 150px;
     gap: 20px;
-
-}
-
-@media(max-width:780px) {
-    .regline {
-        left: 155px;
-    }
+    top: 20px;
+    left: 150px;
 }
 
 .regline h1 {
-    font-size: 19px;
+    font-size: 17px;
     color: #1A1A1A;
 }
 
-.investor {
+.investor{
     display: flex;
-
 }
-
-@media(max-width:780px) {
-    .investor {
-        display: flex;
-        width : 120PX;
+@media(max-width:1200px){
+    .investor{
         flex-direction: column;
-        align-items: center;
-
     }
 }
-
-.form {
-    /* display: flex; */
-    /* position: relative; */
-    /* background-image: url("images/laptop.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.form{
+    position: relative;
     width: 50%;
-    height: 350px; */
-    /* position: relative; */
-    width: 50%;
-    
 }
 .lap{
-    height: 200px;
-    position: relative;
-    top: 19px;
-    left: 130px;
-}
-.lap img{
-    width: 478px;
-}
-.regi {
-    height: 226px;
+    width: 500px;
     position: absolute;
-    top: 16px;
-    left: 1px;
+    top: 70px;
+    left: 100px;
 }
-@media(max-width:780px){
-    .regi{
-        height: 181px;
-        position: absolute;
-        top: 75px;
-        left: 45px;
-    }
+.frm{
+    width: 384px;
+    position: absolute;
+    top: 85px;
+    left: 160px;
 }
-
-
+.lap1{
+    width: 100%;
+}
+.regi{
+    width: 100%;
+}
 .lorem {
     width: 50%;
-    text-align: center;
+    left: 500px;
 }
 
 .lorem h1 {
