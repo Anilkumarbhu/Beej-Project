@@ -29,7 +29,9 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px 20px;
+    
+
 }
 
 .logo img {
@@ -118,6 +120,12 @@ nav {
     }
 }
 
+@media(max-width:450px) {
+    .dolor {
+        padding: 0 20px;
+    }
+}
+
 /* Doller */
 
 
@@ -180,8 +188,9 @@ nav {
 
 
 }
-@media(max-width:780px){
-    .financial{
+
+@media(max-width:780px) {
+    .financial {
         display: flex;
         flex-direction: column;
         gap: 80px;
@@ -190,6 +199,7 @@ nav {
 
 .scroll {
     position: relative;
+    padding: 0 10px;
 
 }
 
@@ -307,7 +317,7 @@ nav {
     padding: 28px;
 }
 
-@media(max-width:780px) {
+@media(max-width:840px) {
     .investo {
         display: flex;
         flex-direction: column;
@@ -358,27 +368,35 @@ nav {
 
 
 /* founders */
+.founders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 .founders h1 {
     text-align: center;
-    padding: 50px;
+    padding: 50px 0;
     color: #464646;
 
 }
 
 .fourfoundrs {
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 100px;
-    text-align: center;
-    padding: 50px;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
-@media(max-width:330px) {
+@media(max-width:450px) {
     .fourfoundrs {
-        display: block;
-        align-items: center;
+        flex-direction: column;
+        gap: 50px;
     }
 }
 
@@ -406,8 +424,10 @@ nav {
     width: 100%;
     background-color: #F6FFFD;
     position: relative;
+    display: none;
 
 }
+
 .regline {
     position: absolute;
     display: flex;
@@ -422,36 +442,43 @@ nav {
     color: #1A1A1A;
 }
 
-.investor{
+.investor {
     display: flex;
 }
-@media(max-width:1200px){
-    .investor{
+
+@media(max-width:1200px) {
+    .investor {
         flex-direction: column;
     }
 }
-.form{
+
+.form {
     position: relative;
     width: 50%;
 }
-.lap{
+
+.lap {
     width: 500px;
     position: absolute;
     top: 70px;
     left: 100px;
 }
-.frm{
+
+.frm {
     width: 384px;
     position: absolute;
     top: 85px;
     left: 160px;
 }
-.lap1{
+
+.lap1 {
     width: 100%;
 }
-.regi{
+
+.regi {
     width: 100%;
 }
+
 .lorem {
     width: 50%;
     left: 500px;
@@ -475,8 +502,13 @@ nav {
 /* organization */
 
 .organization {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
     text-align: center;
-    padding: 150px;
 }
 
 .organization h1 {
@@ -484,35 +516,25 @@ nav {
     font-size: 30px;
 }
 
-@media(max-width:780px) {
-    .organization h1 {
-        color: #464646;
-        font-size: 23px;
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media(max-width:450px) {
+    .company {
+        flex-direction: column;
 
     }
 }
-
 
 .company img {
     height: 120px;
-    margin-top: 40px;
-
-
 }
 
-@media(max-width:780px) {
-    .company img {
-        display: block;
-        height: 80px;
-        margin-top: 20px;
-    }
-
-    .company {
-        height: 500px;
-        width: 100%;
-        margin-left: 150px;
-    }
-}
 
 /* organization */
 
@@ -637,11 +659,10 @@ nav {
 }
 
 .kait {
-    height: 400px;
     width: 100%;
     background-color: #132A13;
     text-align: center;
-
+    padding: 20px 0;
 
 }
 
@@ -653,15 +674,7 @@ nav {
 
 }
 
-@media(max-width:320px) {
-    .kait img {
-        height: 100px;
-        margin-top: 60px;
-        opacity: 0.6;
-        padding: 30px;
 
-    }
-}
 
 .kait .jas {
     opacity: 1;
@@ -692,9 +705,11 @@ nav {
 
 
 .faq {
-    text-align: center;
-    padding: 50px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .faq h1 {
@@ -702,18 +717,13 @@ nav {
     color: #225649;
 }
 
-.whata {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .workshop {
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -726,6 +736,18 @@ nav {
     border: 1px solid #F1F5F7;
     border-radius: 10px;
     padding: 30px;
+}
+
+@media(max-width:450px) {
+    .work {
+        width: 400px;
+    }
+}
+
+@media(max-width:375px) {
+    .work {
+        width: 350px;
+    }
 }
 
 .we h1 {
@@ -790,13 +812,20 @@ nav {
 }
 
 footer {
-    height: 200px;
+    /* height: 200px; */
     width: 100%;
     display: flex;
     justify-content: center;
     justify-content: space-around;
     background-color: #132A13;
     padding: 60px;
+}
+@media(max-width:450px){
+    footer{
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
 }
 
 i {
